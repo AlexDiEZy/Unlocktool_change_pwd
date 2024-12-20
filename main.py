@@ -71,7 +71,7 @@ driver.find_element(By.XPATH, '/html/body/main/div/div/div[1]/ul/li[1]/a').click
 
 last_login = driver.find_element(By.XPATH, '//*[@id="licenses"]/div[2]/div/table/tbody/tr[7]/td[2]').text
 
-print('__________________________________________________________')echo "# Unlocktool_change_pwd" >> README.md
+print('__________________________________________________________')
 print(f"Последний логин был:  {last_login}")
 print(f"Новый пароль -  {new_password}")
 
