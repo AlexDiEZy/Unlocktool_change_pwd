@@ -23,8 +23,8 @@ from const import account_page
 
 driver = Driver(uc= True)
 
-current_login = 'Razlock_phone'
-current_password = 'Hrenovoo24'
+current_login = 'top_login'
+current_password = 'top_pass'
 
 source_page = driver.get(URI)
 driver.type("#id_username", current_login)
@@ -53,7 +53,7 @@ driver.execute_script(f'arguments[0].value = "{g_response}";', recaptcha_respons
 WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, '/html/body/main/div/div/div/div[1]/div[1]/form/button'))
 ).click()
 
-new_password = 'Hrenovoo24'
+new_password = 'top_new_pass'
 
 driver.get(change_password_page)
 time.sleep(1)
